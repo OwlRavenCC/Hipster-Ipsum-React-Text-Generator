@@ -12,7 +12,7 @@ const App = () => {
   const gethipsumData = async (paragraphs) => {
     setLoading(true);
     const req = await fetch(
-      `http://hipsum.co/api/?type=hipster-centric&paras=${paragraphs}`
+      `https://hipsum.co/api/?type=hipster-centric&paras=${paragraphs}`
     );
     const res = await req.json();
     sethipsumData(res);
